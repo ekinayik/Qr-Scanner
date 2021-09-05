@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="525dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/ShowOptionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Options" />
+
+        <LinearLayout
+            android:id="@+id/OptionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/SaveQRButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:text="SAVE QR"
+                android:textSize="10sp"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/GoogleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:text="Google"
+                android:textSize="10sp"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/WebpageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:text="WebPage"
+                android:textSize="10sp"
+                android:textStyle="normal|bold|italic" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scanbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCAN QR" />
+
+        <Button
+            android:id="@+id/GeneratorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR GENERATOR" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
